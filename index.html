@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Alin-Stefan Oanca</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .contact-info, .education, .work-experience, .certificates, .languages {
+            margin-bottom: 15px;
+        }
+        .contact-info p, .education p, .work-experience p, .certificates p, .languages p {
+            margin: 5px 0;
+        }
+        .toggle-content {
+            display: none;
+        }
+        .section h2 {
+            cursor: pointer;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var headers = document.querySelectorAll(".section h2");
+            headers.forEach(function(header) {
+                header.addEventListener("click", function() {
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "none" || content.style.display === "") {
+                        content.style.display = "block";
+                    } else {
+                        content.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="photo.jpg" alt="Alin-Stefan Oanca">
+            <h1>Curriculum Vitae</h1>
+        </div>
+        <div class="section personal-description">
+            <h2>Personal Description and Information</h2>
+            <div class="toggle-content">
+                <p><strong>Last Name:</strong> Oanca</p>
+                <p><strong>Given Name:</strong> Alin-Stefan</p>
+                <p><strong>Date of birth:</strong> 02 April 1989</p>
+                <p><strong>Nationality:</strong> Romanian</p>
+                <p><strong>Address:</strong> Romania, Constanta, 25 Milano Street, B5, Ap. 501, Zipcode: 900519</p>
+                <p><strong>Phone:</strong> +40 752 459 039</p>
+                <p><strong>E-mail address:</strong> <a href="mailto:alin_2489@yahoo.com">alin_2489@yahoo.com</a></p>
+            </div>
+        </div>
+       
+     
+        <div class="section education">
+            <h2>Education</h2>
+            <div class="toggle-content">
+                <p><strong>Constanta Maritime University, Faculty of Maritime and Inlandwaterways Transport</strong></p>
+                <p>BSc: 01.10.2010 – 01.10.2014</p>
+                <p>MSc: 01.10.2018 – 01.10.2020</p>
+            </div>
+        </div>
+        <div class="section languages">
+            <h2>Languages</h2>
+            <div class="toggle-content">
+                <p><strong>English:</strong> fluent</p>
+                <p><strong>German:</strong> fluent</p>
+                <p><strong>Romanian:</strong> native</p>
+            </div>
+        </div>
+        <div class="section work-experience">
+            <h2>Work Experience</h2>
+            <div class="toggle-content">
+                <p><strong>09.09.2023 – present:</strong> Chief Officer Safety – Hanseatic inspiration, Hapag Lloyd Cruises</p>
+                <p><strong>14.02.2020 – 09.09.2023:</strong> Navigation Officer – Hanseatic inspiration / Hanseatic spirit, Hapag Lloyd Cruises</p>
+                <p><strong>01.12.2019 – 14.02.2020:</strong> Security Officer – Hanseatic inspiration, Hapag Lloyd Cruises</p>
+                <p><strong>2016-2019:</strong> 3rd Officer - Ocean Endeavour / Ocean Atlantic, Ship Manger: FleetPro / Cruise Management International, Charterer: Quark Expeditions / Adventure Canada, Ship Owner: SunStone Ships</p>
+            </div>
+        </div>
+        <div class="section certificates">
+            <h2>Certificates</h2>
+            <div class="toggle-content">
+                <p>CoC: Chief Officer on ships of 500GRT or more</p>
+                <p>Advanced Polar Code</p>
+                <p>Basic Polar Code</p>
+                <p>Basic Safety Training</p>
+                <p>Proficiency in Survival Craft and Rescue Boats</p>
+                <p>Advanced Fire Fighting</p>
+                <p>Medical Emergency First Aid</p>
+                <p>ECDIS</p>
+                <p>Human Element Leadership and Management</p>
+                <p>Global Maritime Distress and Safety System - GOC</p>
+                <p>SSO</p>
+                <p>SSD</p>
+                <p>Passenger Ships (Crowd Management, Safety Training for Passengers, Crisis Management, Passenger Safety)</p>
+                <p>Maritime English</p>
+                <p>National Endorsement</p>
+                <p>Yellow Fever Vaccination</p>
+                <p>Malta Endorsement</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
